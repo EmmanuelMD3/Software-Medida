@@ -10,7 +10,7 @@ html {
 
 body {
   font-family: Inter, Arial, sans-serif;
-  background: #060914;
+  background: #08111f;
   color: #f8fafc;
   line-height: 1.6;
   overflow-x: hidden;
@@ -33,53 +33,42 @@ body::after {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at top left, rgba(56, 189, 248, 0.16), transparent 32%),
-    radial-gradient(circle at bottom right, rgba(139, 92, 246, 0.14), transparent 32%);
+    radial-gradient(circle at top left, rgba(45, 212, 191, 0.18), transparent 34%),
+    radial-gradient(circle at top right, rgba(125, 211, 252, 0.14), transparent 32%),
+    radial-gradient(circle at bottom left, rgba(251, 146, 60, 0.10), transparent 30%);
   pointer-events: none;
   z-index: -4;
 }
 
-.cursor-glow {
-  position: fixed;
-  width: 240px;
-  height: 240px;
-  border-radius: 999px;
-  background: rgba(56, 189, 248, 0.09);
-  filter: blur(45px);
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  z-index: -1;
-}
-
 .background-blur {
   position: fixed;
-  width: 380px;
-  height: 380px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.28;
+  filter: blur(65px);
+  opacity: 0.18;
   z-index: -3;
-  animation: float 8s ease-in-out infinite;
+  animation: float 9s ease-in-out infinite;
 }
 
 .blur-one {
-  background: #38bdf8;
+  background: #2dd4bf;
   top: 7%;
   right: 8%;
 }
 
 .blur-two {
-  background: #8b5cf6;
+  background: #38bdf8;
   bottom: 5%;
   left: 5%;
   animation-delay: 2s;
 }
 
 .blur-three {
-  background: #22c55e;
+  background: #fb923c;
   top: 45%;
   left: 45%;
-  opacity: 0.12;
+  opacity: 0.10;
   animation-delay: 4s;
 }
 
@@ -89,7 +78,7 @@ body::after {
   }
 
   50% {
-    transform: translateY(-35px) scale(1.05);
+    transform: translateY(-22px) scale(1.03);
   }
 }
 
@@ -102,8 +91,7 @@ body::after {
   width: 100%;
   padding: 14px 18px;
   border: 1px solid rgba(148, 163, 184, 0.18);
-  background: rgba(15, 23, 42, 0.58);
-  backdrop-filter: blur(18px);
+  background: rgba(8, 17, 31, 0.92);
   border-radius: 24px;
   display: flex;
   align-items: center;
@@ -112,6 +100,7 @@ body::after {
   position: sticky;
   top: 18px;
   z-index: 10;
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.18);
 }
 
 .logo {
@@ -129,14 +118,14 @@ body::after {
   display: grid;
   place-items: center;
   border-radius: 16px;
-  background: linear-gradient(135deg, #38bdf8, #8b5cf6);
-  color: #020617;
-  box-shadow: 0 16px 40px rgba(56, 189, 248, 0.25);
+  background: linear-gradient(135deg, #2dd4bf, #7dd3fc);
+  color: #022c22;
+  box-shadow: 0 16px 40px rgba(45, 212, 191, 0.25);
 }
 
 .logo small {
   display: block;
-  color: #94a3b8;
+  color: #a8b3c4;
   font-size: 12px;
   margin-top: -3px;
 }
@@ -155,14 +144,14 @@ body::after {
 }
 
 .nav-links a:hover {
-  color: #38bdf8;
+  color: #5eead4;
 }
 
 .nav-button {
   padding: 10px 18px;
   border-radius: 999px;
-  background: rgba(56, 189, 248, 0.12);
-  border: 1px solid rgba(56, 189, 248, 0.35);
+  background: rgba(45, 212, 191, 0.10);
+  border: 1px solid rgba(45, 212, 191, 0.32);
 }
 
 .hero-content {
@@ -182,7 +171,7 @@ body::after {
 .small-title,
 .section-title p {
   width: fit-content;
-  color: #38bdf8;
+  color: #5eead4;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -190,8 +179,8 @@ body::after {
   margin-bottom: 18px;
   padding: 9px 14px;
   border-radius: 999px;
-  background: rgba(56, 189, 248, 0.09);
-  border: 1px solid rgba(56, 189, 248, 0.18);
+  background: rgba(45, 212, 191, 0.10);
+  border: 1px solid rgba(45, 212, 191, 0.22);
 }
 
 h1 {
@@ -204,13 +193,13 @@ h1 {
 
 h1 span {
   display: block;
-  background: linear-gradient(135deg, #38bdf8, #a78bfa, #f8fafc);
+  background: linear-gradient(135deg, #5eead4, #7dd3fc, #fde68a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .description {
-  color: #cbd5e1;
+  color: #d1d9e6;
   font-size: 19px;
   max-width: 760px;
   margin-bottom: 34px;
@@ -236,14 +225,14 @@ h1 span {
 }
 
 .btn-primary {
-  color: #020617;
-  background: linear-gradient(135deg, #38bdf8, #67e8f9);
-  box-shadow: 0 18px 45px rgba(56, 189, 248, 0.25);
+  color: #022c22;
+  background: linear-gradient(135deg, #5eead4, #7dd3fc);
+  box-shadow: 0 18px 45px rgba(45, 212, 191, 0.24);
 }
 
 .btn-primary:hover {
   transform: translateY(-4px);
-  box-shadow: 0 24px 60px rgba(56, 189, 248, 0.35);
+  box-shadow: 0 24px 60px rgba(45, 212, 191, 0.34);
 }
 
 .btn-secondary {
@@ -254,7 +243,8 @@ h1 span {
 
 .btn-secondary:hover {
   transform: translateY(-4px);
-  border-color: rgba(56, 189, 248, 0.7);
+  border-color: rgba(94, 234, 212, 0.75);
+  color: #5eead4;
 }
 
 .quick-stack {
@@ -277,18 +267,18 @@ h1 span {
 .quick-stack span:hover,
 .tech-list span:hover {
   transform: translateY(-3px);
-  border-color: rgba(56, 189, 248, 0.55);
-  color: #38bdf8;
+  border-color: rgba(94, 234, 212, 0.55);
+  color: #5eead4;
+  background: rgba(45, 212, 191, 0.10);
 }
 
 .hero-panel {
-  background: rgba(15, 23, 42, 0.68);
+  background: rgba(12, 22, 39, 0.86);
   border: 1px solid rgba(148, 163, 184, 0.20);
-  backdrop-filter: blur(18px);
   border-radius: 30px;
   padding: 18px;
-  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.35);
-  animation: fadeLeft 1s ease forwards, cardFloat 5s ease-in-out infinite;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  animation: fadeLeft 1s ease forwards, cardFloat 7s ease-in-out infinite;
 }
 
 @keyframes cardFloat {
@@ -297,7 +287,7 @@ h1 span {
   }
 
   50% {
-    transform: translateY(-16px);
+    transform: translateY(-8px);
   }
 }
 
@@ -305,7 +295,7 @@ h1 span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #64748b;
+  color: #8fa0b6;
   font-size: 13px;
   padding: 6px 8px 18px;
 }
@@ -331,7 +321,7 @@ h1 span {
 }
 
 .code-card {
-  background: #020617;
+  background: #050914;
   border-radius: 22px;
   padding: 28px;
   color: #e5e7eb;
@@ -347,7 +337,7 @@ h1 span {
 }
 
 .purple {
-  color: #c084fc;
+  color: #c4b5fd;
 }
 
 .green-text {
@@ -364,18 +354,18 @@ h1 span {
 .mini-dashboard div {
   padding: 18px;
   border-radius: 20px;
-  background: rgba(2, 6, 23, 0.58);
+  background: rgba(5, 9, 20, 0.70);
   border: 1px solid rgba(148, 163, 184, 0.12);
 }
 
 .mini-dashboard strong {
   display: block;
-  color: #38bdf8;
+  color: #5eead4;
   font-size: 22px;
 }
 
 .mini-dashboard span {
-  color: #94a3b8;
+  color: #a8b3c4;
   font-size: 13px;
 }
 
@@ -407,9 +397,8 @@ h1 span {
 .about-box,
 .contact-box,
 .tech-category {
-  background: rgba(15, 23, 42, 0.62);
+  background: rgba(12, 22, 39, 0.86);
   border: 1px solid rgba(148, 163, 184, 0.18);
-  backdrop-filter: blur(16px);
   border-radius: 28px;
 }
 
@@ -427,7 +416,7 @@ h1 span {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.10), transparent 45%);
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.10), transparent 45%);
   opacity: 0;
   transition: 0.3s ease;
 }
@@ -444,8 +433,8 @@ h1 span {
 .tech-category:hover,
 .contact-card:hover {
   transform: translateY(-10px);
-  border-color: rgba(56, 189, 248, 0.55);
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.28);
+  border-color: rgba(94, 234, 212, 0.48);
+  box-shadow: 0 24px 70px rgba(45, 212, 191, 0.10);
 }
 
 .icon {
@@ -454,7 +443,7 @@ h1 span {
   border-radius: 20px;
   display: grid;
   place-items: center;
-  background: rgba(56, 189, 248, 0.12);
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.16), rgba(125, 211, 252, 0.10));
   margin-bottom: 22px;
   font-size: 25px;
 }
@@ -529,7 +518,7 @@ h1 span {
 
 .project span {
   display: inline-block;
-  color: #38bdf8;
+  color: #5eead4;
   font-weight: 900;
   margin-bottom: 42px;
 }
@@ -559,7 +548,7 @@ h1 span {
 .contact-card {
   text-decoration: none;
   color: #f8fafc;
-  background: rgba(2, 6, 23, 0.55);
+  background: rgba(5, 9, 20, 0.62);
   border: 1px solid rgba(148, 163, 184, 0.18);
   border-radius: 24px;
   padding: 24px;
@@ -578,12 +567,12 @@ h1 span {
   border-radius: 18px;
   display: grid;
   place-items: center;
-  background: rgba(56, 189, 248, 0.12);
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.18), rgba(251, 146, 60, 0.10));
   font-size: 24px;
 }
 
 .contact-card span {
-  color: #94a3b8;
+  color: #a8b3c4;
   font-size: 14px;
   word-break: break-word;
 }
@@ -591,7 +580,7 @@ h1 span {
 footer {
   padding: 30px 8%;
   text-align: center;
-  color: #94a3b8;
+  color: #a8b3c4;
   border-top: 1px solid rgba(148, 163, 184, 0.14);
 }
 

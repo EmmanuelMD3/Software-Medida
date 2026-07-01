@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Emmanuel Martínez Díaz | Software a la medida</title>
-  <meta name="description" content="Desarrollo de software a la medida, páginas web, sistemas administrativos, bases de datos y automatizaciones." />
+  <meta
+    name="description"
+    content="Desarrollo de software a la medida, páginas web, sistemas administrativos, APIs, bases de datos y automatizaciones."
+  />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="cursor-glow"></div>
   <div class="background-blur blur-one"></div>
   <div class="background-blur blur-two"></div>
   <div class="background-blur blur-three"></div>
@@ -298,20 +300,17 @@
         <div class="contact-grid">
           <a
             class="contact-card"
-            href="https://wa.me/527224238662?text=Hola,%20quiero%20informes%20sobre%20software%20a%20la%20medida"
+            href="https://wa.me/527224239662?text=Hola,%20quiero%20informes%20sobre%20software%20a%20la%20medida"
             target="_blank"
           >
             <div class="contact-icon">📱</div>
             <div>
               <h3>WhatsApp</h3>
-              <span>722 423 8662</span>
+              <span>722 423 9662</span>
             </div>
           </a>
 
-          <a
-            class="contact-card"
-            href="mailto:emma3md@gmail.com"
-          >
+          <a class="contact-card" href="mailto:emma3md@gmail.com">
             <div class="contact-icon">✉️</div>
             <div>
               <h3>Correo</h3>
@@ -343,7 +342,7 @@
     const reveals = document.querySelectorAll('.reveal');
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('active');
         }
@@ -352,14 +351,7 @@
       threshold: 0.15
     });
 
-    reveals.forEach(section => observer.observe(section));
-
-    const cursorGlow = document.querySelector('.cursor-glow');
-
-    document.addEventListener('mousemove', (event) => {
-      cursorGlow.style.left = event.clientX + 'px';
-      cursorGlow.style.top = event.clientY + 'px';
-    });
+    reveals.forEach((section) => observer.observe(section));
   </script>
 </body>
 </html>
